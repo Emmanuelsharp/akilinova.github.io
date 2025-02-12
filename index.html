@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akilinova - Digital Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <span class="company-name">Akilinova</span>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="nav-cta">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg') center/cover no-repeat;">
+        <div class="hero-content">
+            <span class="company-tagline">Welcome to</span>
+            <h1>Akilinova</h1>
+            <p>Transforming businesses through innovative digital solutions. We help you build, grow, and scale your digital presence with cutting-edge technology.</p>
+            <div class="cta-group">
+                <a href="#features" class="cta-button">Explore Services</a>
+                <a href="#contact" class="cta-button secondary">Contact Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to discover</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Why Choose Us</h2>
+        <p class="section-subtitle">Discover what makes us different</p>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up">
+                <img src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg" alt="Innovation">
+                <h3>Innovative Solutions</h3>
+                <p>We leverage cutting-edge technologies to deliver solutions that keep you ahead of the competition.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> AI-Powered Solutions</li>
+                    <li><i class="fas fa-check"></i> Cloud Integration</li>
+                    <li><i class="fas fa-check"></i> Modern Architecture</li>
+                </ul>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg" alt="Security">
+                <h3>Enterprise Security</h3>
+                <p>Your data security is our top priority. We implement industry-leading security measures.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> End-to-End Encryption</li>
+                    <li><i class="fas fa-check"></i> Regular Security Audits</li>
+                    <li><i class="fas fa-check"></i> Compliance Standards</li>
+                </ul>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg" alt="Support">
+                <h3>24/7 Expert Support</h3>
+                <p>Our dedicated team is always ready to help you with any questions or concerns.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> 24/7 Live Support</li>
+                    <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                    <li><i class="fas fa-check"></i> Regular Check-ins</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p class="section-subtitle">Comprehensive solutions for your business needs</p>
+        <div class="services-grid">
+            <div class="service-card" data-aos="zoom-in">
+                <i class="fas fa-camera-retro"></i>
+                <h3>AI & CCTV Solutions</h3>
+                <p>State-of-the-art surveillance systems integrated with artificial intelligence for enhanced security.</p>
+                <ul class="service-list">
+                    <li>AI-Powered CCTV Systems</li>
+                    <li>Facial Recognition</li>
+                    <li>Motion Detection Analytics</li>
+                    <li>24/7 Remote Monitoring</li>
+                </ul>
+                <a href="#" class="service-link" onclick="openModal('cctv-modal')">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Custom websites and web applications built with modern technologies.</p>
+                <ul class="service-list">
+                    <li>Responsive Design</li>
+                    <li>E-commerce Solutions</li>
+                    <li>CMS Development</li>
+                    <li>Progressive Web Apps</li>
+                </ul>
+                <a href="#" class="service-link" onclick="openModal('web-modal')">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Apps</h3>
+                <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                <ul class="service-list">
+                    <li>iOS Development</li>
+                    <li>Android Development</li>
+                    <li>Cross-platform Apps</li>
+                    <li>App Maintenance</li>
+                </ul>
+                <a href="#" class="service-link" onclick="openModal('mobile-modal')">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h3>500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-project-diagram"></i>
+                <h3>1000+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <h3>24/7</h3>
+                <p>Support Available</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-award"></i>
+                <h3>50+</h3>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Client Success Stories</h2>
+        <p class="section-subtitle">What our clients say about us</p>
+        <div class="testimonials-slider">
+            <div class="testimonial" data-aos="fade-up">
+                <div class="testimonial-content">
+                    <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg" alt="Client 1" class="client-img">
+                    <p>"Their expertise and dedication transformed our business. The results exceeded our expectations!"</p>
+                    <div class="client-info">
+                        <h4>John Doe</h4>
+                        <span>CEO, Tech Corp</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Let's Work Together</h2>
+        <p class="section-subtitle">Get in touch with our team</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Our Location</h4>
+                        <p>State house road,University way junction,Luther House<br>Nairobi 4th floor</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>0719638128/0705094881</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>Akilinovatech@gmail.com</p>
+                    </div>
+                </div>
+                <div class="social-links-contact">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>We are dedicated to providing innovative digital solutions that help businesses grow and succeed in the modern world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Mobile Apps</li>
+                        <li>Cloud Services</li>
+                        <li>Consulting</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this before closing body tag -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Service Modals -->
+    <div id="cctv-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('cctv-modal')">&times;</span>
+            <h2>AI & CCTV Solutions</h2>
+            <div class="modal-body">
+                <img src="https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg" alt="CCTV Security" class="modal-img">
+                <h3>Advanced Security Solutions</h3>
+                <p>Our AI-powered CCTV solutions provide cutting-edge security and surveillance capabilities for businesses of all sizes. We combine state-of-the-art hardware with intelligent software to deliver comprehensive security coverage.</p>
+                
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><strong>AI-Powered Analytics:</strong> Real-time threat detection and behavioral analysis</li>
+                    <li><strong>Facial Recognition:</strong> Advanced identification and access control systems</li>
+                    <li><strong>Smart Motion Detection:</strong> Intelligent monitoring with reduced false alarms</li>
+                    <li><strong>24/7 Remote Monitoring:</strong> Continuous surveillance with instant alerts</li>
+                </ul>
+
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Enhanced security with real-time monitoring and alerts</li>
+                    <li>Reduced security personnel costs through automation</li>
+                    <li>Comprehensive coverage with minimal blind spots</li>
+                    <li>Easy integration with existing security systems</li>
+                </ul>
+
+                <div class="modal-cta">
+                    <a href="#contact" class="cta-button" onclick="closeModal('cctv-modal')">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="web-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('web-modal')">&times;</span>
+            <h2>Web Development</h2>
+            <div class="modal-body">
+                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="Web Development" class="modal-img">
+                <h3>Custom Web Solutions</h3>
+                <p>We create beautiful, responsive, and user-friendly websites that help businesses establish a strong online presence. Our web development solutions are tailored to meet your specific needs and goals.</p>
+
+                <h4>Our Expertise:</h4>
+                <ul>
+                    <li><strong>Custom Website Development:</strong> Unique designs that reflect your brand</li>
+                    <li><strong>E-commerce Solutions:</strong> Secure and scalable online stores</li>
+                    <li><strong>Content Management Systems:</strong> Easy-to-use platforms for content updates</li>
+                    <li><strong>Progressive Web Apps:</strong> Mobile-first applications with offline capabilities</li>
+                </ul>
+
+                <h4>Technologies We Use:</h4>
+                <ul>
+                    <li>Modern frameworks like React, Angular, and Vue.js</li>
+                    <li>Responsive design with HTML5, CSS3, and JavaScript</li>
+                    <li>Secure backend development with Node.js, Python, and PHP</li>
+                    <li>Database integration with MySQL, MongoDB, and PostgreSQL</li>
+                </ul>
+
+                <div class="modal-cta">
+                    <a href="#contact" class="cta-button" onclick="closeModal('web-modal')">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('mobile-modal')">&times;</span>
+            <h2>Mobile App Development</h2>
+            <div class="modal-body">
+                <img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg" alt="Mobile Development" class="modal-img">
+                <h3>Mobile Solutions</h3>
+                <p>We develop high-performance mobile applications that provide seamless user experiences across all platforms. Our mobile solutions help businesses reach their customers wherever they are.</p>
+
+                <h4>Development Services:</h4>
+                <ul>
+                    <li><strong>Native iOS Development:</strong> Custom iPhone and iPad applications</li>
+                    <li><strong>Native Android Development:</strong> Tailored Android applications</li>
+                    <li><strong>Cross-Platform Development:</strong> Build once, deploy everywhere</li>
+                    <li><strong>App Maintenance:</strong> Regular updates and support</li>
+                </ul>
+
+                <h4>Our Approach:</h4>
+                <ul>
+                    <li>User-centered design methodology</li>
+                    <li>Agile development process</li>
+                    <li>Comprehensive testing and quality assurance</li>
+                    <li>Post-launch support and maintenance</li>
+                </ul>
+
+                <div class="modal-cta">
+                    <a href="#contact" class="cta-button" onclick="closeModal('mobile-modal')">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Scroll to top button
+        const scrollBtn = document.querySelector('.scroll-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('show');
+            } else {
+                scrollBtn.classList.remove('show');
+            }
+        });
+
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Modal functionality
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
